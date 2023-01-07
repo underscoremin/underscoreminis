@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>SANS560 Course Notes | underscoreminis</title>
+<meta name="generator" content="Jekyll v3.9.2" />
+<meta property="og:title" content="SANS560 Course Notes" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="560.x Key Points" />
+<meta property="og:description" content="560.x Key Points" />
+<link rel="canonical" href="https://underscoremin.github.io/underscoreminis/2023/01/01/SANS-560-Course-Notes" />
+<meta property="og:url" content="https://underscoremin.github.io/underscoreminis/2023/01/01/SANS-560-Course-Notes" />
+<meta property="og:site_name" content="underscoreminis" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2023-01-01T00:00:00+00:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="SANS560 Course Notes" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2023-01-01T00:00:00+00:00","datePublished":"2023-01-01T00:00:00+00:00","description":"560.x Key Points","headline":"SANS560 Course Notes","mainEntityOfPage":{"@type":"WebPage","@id":"https://underscoremin.github.io/underscoreminis/2023/01/01/SANS-560-Course-Notes"},"url":"https://underscoremin.github.io/underscoreminis/2023/01/01/SANS-560-Course-Notes"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+<meta
+  name="keywords"
+  content="" />
+
+<link rel="shortcut icon" href="/underscoreminis/favicon.ico" />
+<link rel="apple-touch-icon" href="/underscoreminis/favicon.ico" />
+<link
+  rel="alternate"
+  type="application/rss+xml"
+  title="underscoreminis - Mini security posts. "
+  href="/underscoreminis/feed.xml" />
+<link
+  rel="stylesheet"
+  type="text/css"
+  href="/underscoreminis/assets/css/base.css" />
+<link
+  rel="stylesheet"
+  type="text/css"
+  href="/underscoreminis/assets/css/highlight.css" />
+
+<!--[if lt IE 9]>
+  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+<script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+<script>
+    mermaid.initialize(
+        {
+            startOnLoad: true,
+            theme: "base",
+			'themeVariables': {
+				'primaryColor': '#ba91ed',
+			    'primaryTextColor': '#fff',
+			    'primaryBorderColor': '#2b0061',
+			    'lineColor': '#2b0061',
+			    'secondaryColor': '#eae4ef',
+			    'tertiaryColor': '#f2e8ff',
+			    'tertiaryBorderColor': '#2b0061',
+                'darkMode': true,
+            },
+            flowchart: {
+                diagramPadding: 30,
+                rankSpacing: 100,
+                padding: 7,
+                useMaxWidth: true
+            }
+        }
+
+    );
+</script>
+
+<script
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML"
+  async>
+</script>
+
+
+
+  </head>
+  <body>
+    <div class="container-wrapper">
+      <header class="container-header">
+        <div class="header-info">
+  <span class="header-info-name">underscoreminis</span>
+  <span class="header-info-desc">Mini security posts. </span>
+</div>
+<nav class="header-nav">
+  <ul class="header-main-nav">
+    
+    <li class="header-main-nav-item">
+      <a href="/underscoreminis/">
+        
+          Index
+        
+      </a>
+    </li>
+    
+    <li class="header-main-nav-item">
+      <a href="/underscoreminis/categories">
+        
+          Categories
+        
+      </a>
+    </li>
+    
+    <li class="header-main-nav-item">
+      <a href="/underscoreminis/about">
+        
+          About
+        
+      </a>
+    </li>
+    
+  </ul>
+</nav>
+
+      </header>
+      <main class="container-main">
+        <article class="container-post">
+  <div class="post-title">
+    <h1>SANS560 Course Notes</h1>
+  </div>
+  
+  <div class="post-author print-post-author">
+    <span>_min</span>
+  </div>
+  
+  <div class="post-content">
+    <p><br /></p>
+<h1 id="560x-key-points">560.x Key Points</h1>
+<p><br /></p>
+
+<h2 id="5601-comprehensive-pen-test-planning-scoping-and-recon">560.1: Comprehensive Pen Test Planning, Scoping and Recon</h2>
+<ul>
+  <li>Definitions and Concepts</li>
+  <li>Lab Configuration</li>
+  <li>Scoping and Rules of Engagement</li>
+  <li>Recon Methods<br />
+<br /></li>
+</ul>
+
+<h2 id="5602-in-depth-scanning-and-initial-access">560.2: In-Depth Scanning and Initial Access</h2>
+<ul>
+  <li>Determining key information about target systems</li>
+  <li>Scanning of targets</li>
+  <li>Initial access through simple exploitation and password guessing  <br />
+<br /></li>
+</ul>
+
+<h2 id="5603-assumed-breach-post-exploitation-and-passwords">560.3: Assumed Breach, Post-Exploitation, and Passwords</h2>
+<ul>
+  <li>Post-Exploitation: What is done after initial access</li>
+  <li>Assumed breach style test</li>
+  <li>Attacking passwords and authentication protocols  <br />
+<br /></li>
+</ul>
+
+<h2 id="5604-lateral-movement-and-command-and-control-c2">560.4: Lateral Movement and Command and Control (C2)</h2>
+<ul>
+  <li>Lateral Movement to demonstrate risk to organisation</li>
+  <li>Moving through network using build in Windows features</li>
+  <li>C2 tools to automate lateral movement<br />
+<br /></li>
+</ul>
+
+<h2 id="5605-domain-domination-azure-annihilation-and-reporting">560.5: Domain Domination, Azure Annihilation, and Reporting</h2>
+<ul>
+  <li>Microsoft Active Directory attacks for lateral movement</li>
+  <li>Fully on premise environments, Azure Active Directory<br />
+<br /></li>
+</ul>
+
+<h1 id="560x-outline">560.x Outline</h1>
+<p><br /></p>
+
+<h2 id="5601-comprehensive-pen-test-planning-scoping-and-recon-1">560.1: Comprehensive Pen Test Planning, Scoping and Recon</h2>
+<h3 id="definition-and-concepts">Definition and Concepts</h3>
+<ul>
+  <li>Defining Terms</li>
+</ul>
+
+<h3 id="lab-configuration">Lab Configuration</h3>
+<ul>
+  <li>Building an Infrastructure</li>
+  <li>Linux for Pen Testers</li>
+</ul>
+
+<h3 id="scoping-and-rules-of-engagement">Scoping and Rules of Engagement</h3>
+<ul>
+  <li>Overall Process</li>
+  <li>Pre-Engagement</li>
+</ul>
+
+<h3 id="recon-methods">Recon Methods</h3>
+<ul>
+  <li>Reconnaissance Overview</li>
+  <li>Organisational Recon</li>
+  <li>Infrastructure Recon</li>
+  <li>User Recon</li>
+  <li>Automated Recon With Spider Foot<br />
+<br /></li>
+</ul>
+
+<h2 id="5602-in-depth-scanning-and-initial-access-1">560.2: In-Depth Scanning and Initial Access</h2>
+<h3 id="scanning-of-targets">Scanning of targets</h3>
+<ul>
+  <li>Scanning Goals, Types and Tips</li>
+  <li>Nmap</li>
+  <li>Masscan</li>
+  <li>Netcat for the Pen Tester</li>
+  <li>Eye Witness</li>
+  <li>Vulnerability Scanning</li>
+  <li>Nmap Scripting Engine</li>
+  <li>Vulnerability Scanners
+    <h3 id="determining-key-information-about-target-systems">Determining key information about target systems</h3>
+  </li>
+  <li>OS Fingerprinting and Version Scanning</li>
+  <li>Port Scanning
+    <h3 id="initial-access-through-simple-exploitation-and-password-guessing">Initial access through simple exploitation and password guessing</h3>
+  </li>
+  <li>Initial Access</li>
+  <li>Password Guessing</li>
+  <li>Exploitation</li>
+  <li>Exploit Categories</li>
+  <li>Metasploit and Meterpreter<br />
+<br /></li>
+</ul>
+
+<h2 id="5603-assumed-breach-post-exploitation-and-passwords-1">560.3: Assumed Breach, Post-Exploitation, and Passwords</h2>
+<p><br /></p>
+
+<h2 id="5604-lateral-movement-and-command-and-control-c2-1">560.4: Lateral Movement and Command and Control (C2)</h2>
+<p><br /></p>
+
+<h2 id="5605-domain-domination-azure-annihilation-and-reporting-1">560.5: Domain Domination, Azure Annihilation, and Reporting</h2>
+<p><br /></p>
+
+
+  </div>
+  <div class="post-info">
+    <div class="post-date">
+      Written on 
+      2023-01-01
+      
+      .
+    </div>
+    
+    <div class="post-author">
+      Author: _min
+    </div>
+    
+    <div class="post-categories">
+      <span>Categories: </span>
+      
+      <a 
+        href="/underscoreminis/categories#SANS"
+        class="post-category">
+        SANS
+      </a>
+      
+    </div>
+    <div class="post-tags">
+      <span>Tags: </span>
+      
+    </div>
+    <div class="post-other">
+      
+      
+      <div>
+        <span>
+          Previous: 
+        </span>
+        <a href="/underscoreminis/2022/12/01/what-is-DNS">
+          What is DNS
+        </a>
+      </div>
+      
+    </div>
+    
+  </div>
+</article>
+
+      </main>
+      <footer class="container-footer">
+        <div class="footer-copyright">
+  <span class="footer-copyright-text float-left">
+  </span>
+</div>
+
+      </footer>
+    </div>
+  </body>
+</html>

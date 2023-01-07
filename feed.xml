@@ -1,0 +1,379 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.2">Jekyll</generator><link href="https://underscoremin.github.io/underscoreminis/feed.xml" rel="self" type="application/atom+xml" /><link href="https://underscoremin.github.io/underscoreminis/" rel="alternate" type="text/html" /><updated>2023-01-07T22:35:13+00:00</updated><id>https://underscoremin.github.io/underscoreminis/feed.xml</id><title type="html">underscoreminis</title><subtitle>Mini security posts. </subtitle><entry><title type="html">SANS560 Course Notes</title><link href="https://underscoremin.github.io/underscoreminis/2023/01/01/SANS-560-Course-Notes" rel="alternate" type="text/html" title="SANS560 Course Notes" /><published>2023-01-01T00:00:00+00:00</published><updated>2023-01-01T00:00:00+00:00</updated><id>https://underscoremin.github.io/underscoreminis/2023/01/01/SANS-560-Course-Notes</id><content type="html" xml:base="https://underscoremin.github.io/underscoreminis/2023/01/01/SANS-560-Course-Notes">&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;h1 id=&quot;560x-key-points&quot;&gt;560.x Key Points&lt;/h1&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;5601-comprehensive-pen-test-planning-scoping-and-recon&quot;&gt;560.1: Comprehensive Pen Test Planning, Scoping and Recon&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;Definitions and Concepts&lt;/li&gt;
+  &lt;li&gt;Lab Configuration&lt;/li&gt;
+  &lt;li&gt;Scoping and Rules of Engagement&lt;/li&gt;
+  &lt;li&gt;Recon Methods&lt;br /&gt;
+&lt;br /&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;5602-in-depth-scanning-and-initial-access&quot;&gt;560.2: In-Depth Scanning and Initial Access&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;Determining key information about target systems&lt;/li&gt;
+  &lt;li&gt;Scanning of targets&lt;/li&gt;
+  &lt;li&gt;Initial access through simple exploitation and password guessing  &lt;br /&gt;
+&lt;br /&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;5603-assumed-breach-post-exploitation-and-passwords&quot;&gt;560.3: Assumed Breach, Post-Exploitation, and Passwords&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;Post-Exploitation: What is done after initial access&lt;/li&gt;
+  &lt;li&gt;Assumed breach style test&lt;/li&gt;
+  &lt;li&gt;Attacking passwords and authentication protocols  &lt;br /&gt;
+&lt;br /&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;5604-lateral-movement-and-command-and-control-c2&quot;&gt;560.4: Lateral Movement and Command and Control (C2)&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;Lateral Movement to demonstrate risk to organisation&lt;/li&gt;
+  &lt;li&gt;Moving through network using build in Windows features&lt;/li&gt;
+  &lt;li&gt;C2 tools to automate lateral movement&lt;br /&gt;
+&lt;br /&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;5605-domain-domination-azure-annihilation-and-reporting&quot;&gt;560.5: Domain Domination, Azure Annihilation, and Reporting&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;Microsoft Active Directory attacks for lateral movement&lt;/li&gt;
+  &lt;li&gt;Fully on premise environments, Azure Active Directory&lt;br /&gt;
+&lt;br /&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;560x-outline&quot;&gt;560.x Outline&lt;/h1&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;5601-comprehensive-pen-test-planning-scoping-and-recon-1&quot;&gt;560.1: Comprehensive Pen Test Planning, Scoping and Recon&lt;/h2&gt;
+&lt;h3 id=&quot;definition-and-concepts&quot;&gt;Definition and Concepts&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;Defining Terms&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;lab-configuration&quot;&gt;Lab Configuration&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;Building an Infrastructure&lt;/li&gt;
+  &lt;li&gt;Linux for Pen Testers&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;scoping-and-rules-of-engagement&quot;&gt;Scoping and Rules of Engagement&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;Overall Process&lt;/li&gt;
+  &lt;li&gt;Pre-Engagement&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;recon-methods&quot;&gt;Recon Methods&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;Reconnaissance Overview&lt;/li&gt;
+  &lt;li&gt;Organisational Recon&lt;/li&gt;
+  &lt;li&gt;Infrastructure Recon&lt;/li&gt;
+  &lt;li&gt;User Recon&lt;/li&gt;
+  &lt;li&gt;Automated Recon With Spider Foot&lt;br /&gt;
+&lt;br /&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;5602-in-depth-scanning-and-initial-access-1&quot;&gt;560.2: In-Depth Scanning and Initial Access&lt;/h2&gt;
+&lt;h3 id=&quot;scanning-of-targets&quot;&gt;Scanning of targets&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;Scanning Goals, Types and Tips&lt;/li&gt;
+  &lt;li&gt;Nmap&lt;/li&gt;
+  &lt;li&gt;Masscan&lt;/li&gt;
+  &lt;li&gt;Netcat for the Pen Tester&lt;/li&gt;
+  &lt;li&gt;Eye Witness&lt;/li&gt;
+  &lt;li&gt;Vulnerability Scanning&lt;/li&gt;
+  &lt;li&gt;Nmap Scripting Engine&lt;/li&gt;
+  &lt;li&gt;Vulnerability Scanners
+    &lt;h3 id=&quot;determining-key-information-about-target-systems&quot;&gt;Determining key information about target systems&lt;/h3&gt;
+  &lt;/li&gt;
+  &lt;li&gt;OS Fingerprinting and Version Scanning&lt;/li&gt;
+  &lt;li&gt;Port Scanning
+    &lt;h3 id=&quot;initial-access-through-simple-exploitation-and-password-guessing&quot;&gt;Initial access through simple exploitation and password guessing&lt;/h3&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Initial Access&lt;/li&gt;
+  &lt;li&gt;Password Guessing&lt;/li&gt;
+  &lt;li&gt;Exploitation&lt;/li&gt;
+  &lt;li&gt;Exploit Categories&lt;/li&gt;
+  &lt;li&gt;Metasploit and Meterpreter&lt;br /&gt;
+&lt;br /&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;5603-assumed-breach-post-exploitation-and-passwords-1&quot;&gt;560.3: Assumed Breach, Post-Exploitation, and Passwords&lt;/h2&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;5604-lateral-movement-and-command-and-control-c2-1&quot;&gt;560.4: Lateral Movement and Command and Control (C2)&lt;/h2&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;5605-domain-domination-azure-annihilation-and-reporting-1&quot;&gt;560.5: Domain Domination, Azure Annihilation, and Reporting&lt;/h2&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;</content><author><name></name></author><category term="SANS" /><summary type="html">560.x Key Points</summary></entry><entry><title type="html">What is DNS</title><link href="https://underscoremin.github.io/underscoreminis/2022/12/01/what-is-DNS" rel="alternate" type="text/html" title="What is DNS" /><published>2022-12-01T00:00:00+00:00</published><updated>2022-12-01T00:00:00+00:00</updated><id>https://underscoremin.github.io/underscoreminis/2022/12/01/what-is-DNS</id><content type="html" xml:base="https://underscoremin.github.io/underscoreminis/2022/12/01/what-is-DNS">&lt;p&gt;&lt;br /&gt; 
+&lt;strong&gt;Domain Name System&lt;/strong&gt; (&lt;strong&gt;DNS&lt;/strong&gt;) is the system computers use to convert &lt;strong&gt;Domain 
+Names&lt;/strong&gt; e.g. &lt;em&gt;www.example.com&lt;/em&gt; into IP addresses. DNS gets used throughout many 
+common computer activities, however, &lt;em&gt;you&lt;/em&gt; are likely to invoke it the most by 
+browsing the web. More often than not you browse to a website not using its IP 
+address but instead a readable domain name. It is not clear to a computer where 
+on the internet to look for that domain name, so it must first be converted to 
+an IP address using DNS.&lt;br /&gt;
+&lt;br /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;why-dns&quot;&gt;Why DNS&lt;/h2&gt;
+&lt;p&gt;Computers on the internet – more specifically &lt;strong&gt;Internet Protocol&lt;/strong&gt; (&lt;strong&gt;IP&lt;/strong&gt;) 
+networks – identify themselves with IP addresses. To access other computers on 
+the internet, you need to know what their IP address is. However, IP addresses 
+are hard to read and harder to remember, but domain names offer a human friendly 
+way to reference a destination on the internet instead. This might be better for 
+us, but computers still communicate to each other using their IPs. Hence, the 
+reason why we need DNS.&lt;br /&gt;
+&lt;br /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;domain-name-system-layout&quot;&gt;Domain Name System Layout&lt;/h2&gt;
+&lt;p&gt;The Domain Name System can be described as a &lt;strong&gt;Namespace&lt;/strong&gt;:&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;A namespace is a context within which the names of all objects must be 
+unambiguously resolvable. For example, the internet is a single DNS namespace.&lt;/p&gt;
+
+  &lt;p&gt;– &lt;cite&gt;https://learn.microsoft.com/en-us/windows/win32/dns/name-space&lt;/cite&gt;   &lt;br /&gt;
+&lt;br /&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;The DNS namespace has a hierarchical tree like structure of &lt;strong&gt;Domains&lt;/strong&gt;. A 
+domain is any subsection of the whole DNS namespace (it too will also be 
+classified as a namespace). Each domain has a label that corresponds to it. &lt;br /&gt;
+&lt;br /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;domains-vs-domain-names&quot;&gt;Domains vs Domain Names&lt;/h3&gt;
+&lt;p&gt;As mentioned above a domain is any subset of the whole DNS namespace, whereas a
+domain name is a period (‘.’) separated label of domains. The domain name 
+describes the position of the domain in the DNS namespace starting from the Root
+domain (which is at the top of the namespace). ‘&lt;em&gt;www.example.com&lt;/em&gt;’ is a domain 
+name, and ‘&lt;em&gt;www&lt;/em&gt;’, ‘&lt;em&gt;example&lt;/em&gt;’, ‘&lt;em&gt;com&lt;/em&gt;’ are all domains.&lt;br /&gt;
+&lt;br /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;hierarchical-structure&quot;&gt;Hierarchical Structure&lt;/h3&gt;
+&lt;p&gt;At the top of the DNS namespace is the &lt;strong&gt;Root Domain&lt;/strong&gt; and it is identified by a 
+null/empty label. Because empty labels could be confusing to readers, the root 
+domain is often instead represented by a single period ‘.’. It is meant to 
+represent the period that separates the domains in a domain name, however I 
+think that causes more confusion so instead I will represent the Root domain by 
+a empty pair of single quotes: ‘’. 
+&lt;br /&gt;&lt;/p&gt;
+&lt;div class=&quot;mermaid&quot;&gt;
+flowchart LR
+    subgraph rootDomain [&amp;amp;nbsp&amp;amp;nbspRoot Domain&amp;amp;nbsp&amp;amp;nbsp]
+        root('')
+    end
+&lt;/div&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;Underneath the root domain you have the &lt;strong&gt;Top Level Domains&lt;/strong&gt; (&lt;strong&gt;TLDs&lt;/strong&gt;), 
+some examples are:  &lt;br /&gt;
+&lt;br /&gt;&lt;/p&gt;
+
+&lt;div class=&quot;mermaid&quot;&gt; 
+flowchart RL
+    subgraph Root Domain
+        root('')
+    end
+    subgraph &amp;amp;nbsp&amp;amp;nbspTop Level Domains&amp;amp;nbsp&amp;amp;nbsp
+        root -- &amp;amp;nbsp.&amp;amp;nbsp --&amp;gt; com(com)
+        root -- &amp;amp;nbsp.&amp;amp;nbsp --&amp;gt; edu(edu)
+        root -- &amp;amp;nbsp.&amp;amp;nbsp --&amp;gt; org(org)
+        root -- &amp;amp;nbsp.&amp;amp;nbsp --&amp;gt; net(net)
+        root --&amp;gt; ...(...)
+    end
+&lt;/div&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;Underneath the TLDs you have &lt;strong&gt;Second Level Domains&lt;/strong&gt; (&lt;strong&gt;SLDs&lt;/strong&gt;). These are
+often the domains individuals and companies buy to host their websites or other
+resources, for example:  &lt;br /&gt;
+&lt;br /&gt;&lt;/p&gt;
+
+&lt;div class=&quot;mermaid&quot;&gt;
+flowchart RL
+    subgraph Root
+        root('')
+    end
+    subgraph TLD [&amp;amp;nbsp&amp;amp;nbspTop Level Domains&amp;amp;nbsp&amp;amp;nbsp]
+        root -- &amp;amp;nbsp.&amp;amp;nbsp --&amp;gt; com(com)
+        root -- &amp;amp;nbsp.&amp;amp;nbsp --&amp;gt; org(org)
+        root --&amp;gt; ...(...)
+    end
+    subgraph SLD [&amp;amp;nbsp&amp;amp;nbspSecond Level Domains&amp;amp;nbsp&amp;amp;nbsp]
+        com -- &amp;amp;nbsp.&amp;amp;nbsp --&amp;gt; google(google)
+        com --&amp;gt; 2...(...)
+        org -- &amp;amp;nbsp.&amp;amp;nbsp --&amp;gt; wiki(wikipedia)
+        org --&amp;gt; 3...(...)
+    end 
+&lt;/div&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;Underneath the Second Level Domains you have &lt;strong&gt;Third Level Domains&lt;/strong&gt;. Third 
+Level domains are commonly referred to as &lt;strong&gt;subdomains&lt;/strong&gt; however, technically 
+all domains are subdomains of their parent (except the Root domain because it
+has no parent). Some examples of third level 
+domains are:  &lt;br /&gt;
+&lt;br /&gt;&lt;/p&gt;
+
+&lt;div class=&quot;mermaid&quot;&gt;
+flowchart RL
+    subgraph Root
+        root('')
+    end
+    subgraph TLD [&amp;amp;nbsp&amp;amp;nbspTop Level Domains&amp;amp;nbsp&amp;amp;nbsp]
+        root -- &amp;amp;nbsp.&amp;amp;nbsp --&amp;gt; com(com)
+        root --&amp;gt; TLD...(...)
+    end
+    subgraph SLD [&amp;amp;nbsp&amp;amp;nbspSecond Level Domains&amp;amp;nbsp&amp;amp;nbsp]
+        com -- &amp;amp;nbsp.&amp;amp;nbsp --&amp;gt; google(google)
+        com --&amp;gt; SLD...(...)
+    end 
+    subgraph ThLD [&amp;amp;nbsp&amp;amp;nbspThird Level Domains&amp;amp;nbsp&amp;amp;nbsp]
+        google -- &amp;amp;nbsp.&amp;amp;nbsp --&amp;gt; www(www)
+        google -- &amp;amp;nbsp.&amp;amp;nbsp --&amp;gt; mail(mail)
+        google --&amp;gt; ThirdLevelDomain...(...)
+    end 
+&lt;/div&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;constructing-a-domain-name&quot;&gt;Constructing a Domain Name&lt;/h2&gt;
+&lt;p&gt;A domain name is a description of a domains location inside the DNS namespace 
+tree. Starting from the root of the tree (the Root Domain) each child domain 
+will have a domain name that is constructed of &amp;lt;its own domain name&amp;gt;.&amp;lt;domain 
+name of its parent&amp;gt;.&lt;br /&gt;
+&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;The full path of a domain from the root of the DNS name space is called a 
+&lt;strong&gt;Fully Qualified Domain Name&lt;/strong&gt; (&lt;strong&gt;FQDN&lt;/strong&gt;) whereas a &lt;strong&gt;Partially Qualified 
+Domain Name&lt;/strong&gt; (&lt;strong&gt;PQDN&lt;/strong&gt;) aka &lt;strong&gt;Relative Domain Name&lt;/strong&gt; is a subset of a FQDN. 
+PQDNs are commonly used to specify just the host e.g example.com whereas the 
+FQDN is required when actually 
+&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;Deconstructing the FQDN ‘www.example.com.’ into its position in the DNS 
+namespace would look like so:    &lt;br /&gt;
+&lt;br /&gt;&lt;/p&gt;
+&lt;div class=&quot;mermaid&quot;&gt; 
+flowchart TD
+    subgraph &amp;amp;nbsp&amp;amp;nbspRoot Domain&amp;amp;nbsp&amp;amp;nbsp
+        root('')
+    end
+    root -- &amp;amp;nbspParent of '.com' Top Level Domain&amp;amp;nbsp --&amp;gt; com(.com.'')
+    com -- &amp;amp;nbspParent of '.example' Second Level Domain&amp;amp;nbsp --&amp;gt; example(.example.com.'')
+    example -- &amp;amp;nbspParent of 'www' subdomain&amp;amp;nbsp --&amp;gt; www(www.example.com.'')
+    subgraph res [&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&amp;amp;nbsp&amp;amp;nbspFully Qualified Domain Name&amp;amp;nbsp&amp;amp;nbsp]
+        www
+    end
+
+    classDef result line-height:1;
+    class res result;
+&lt;/div&gt;
+&lt;p&gt;You might notice that our resulting domain name above ends in a period (followed
+by an empty string representing the root domain). This is true for all domains 
+as they all branch off from the root. However because this is common in every 
+scenario, the need to write the trailing period has been made redundant and on 
+all domains it’s implied.&lt;br /&gt;
+&lt;br /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;where-is-domain-information-stored&quot;&gt;Where is Domain Information Stored&lt;/h2&gt;
+&lt;p&gt;As you might have guessed domains can be quite large. Take the ‘.com’ TLD for 
+example, it is comprised of every website in the world that ends with ‘.com’. It
+would be very difficult for one organisation to manage all subdomains of the 
+‘.com’ domain. This is why domains can &lt;strong&gt;Delegate&lt;/strong&gt; the management of some of 
+its subdomains to the individuals or organisation creating those subdomains. 
+These subdomains often then become one or more &lt;strong&gt;DNS Zones&lt;/strong&gt;. &lt;br /&gt;
+&lt;br /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;dns-zones&quot;&gt;DNS Zones&lt;/h3&gt;
+&lt;p&gt;A DNS zone is a subsection of the DNS namespace that is managed by one entity. 
+The difference between a zone and a domain is that it’s possible for a whole 
+domain to be a zone (in that scenario they would be synonymous) but it’s also 
+possible for a single domain to be comprised of many zones and this often 
+happens with the higher level domains like the ‘.com’ domain example above. The 
+‘.com’ domain will delegate the management of most of its subdomains leaving it 
+to manage mostly delegation information like “who did I delegate to manage the 
+facebook.com domain” and so on for example:  &lt;br /&gt;
+&lt;br /&gt;&lt;/p&gt;
+
+&lt;div class=&quot;mermaid&quot;&gt;
+flowchart TD
+    subgraph Zone managed by ICANN
+        root('')
+    end
+    root--&amp;gt;com...(...)
+    subgraph .comDomain [.com Domain&amp;amp;nbsp&amp;amp;nbsp&amp;amp;nbsp&amp;amp;nbsp&amp;amp;nbsp&amp;amp;nbsp&amp;amp;nbsp&amp;amp;nbsp&amp;amp;nbsp]
+        subgraph Zone &amp;amp;nbsp&amp;amp;nbsp&amp;amp;nbspmanaged &amp;amp;nbsp&amp;amp;nbsp&amp;amp;nbspby &amp;amp;nbsp&amp;amp;nbsp&amp;amp;nbspVerisign
+            root --&amp;gt; com(.com)
+        end
+        subgraph Zone &amp;amp;nbspmanaged &amp;amp;nbspby &amp;amp;nbspGoogle
+            com --&amp;amp;nbspDelegated from Verisign&amp;amp;nbsp--&amp;gt; google(google.com)
+            google --&amp;gt; gwww(www.google.com)
+            google --&amp;gt; g...(...)
+        end 
+        subgraph Zone &amp;amp;nbsp&amp;amp;nbsp&amp;amp;nbspmanaged &amp;amp;nbsp&amp;amp;nbsp&amp;amp;nbspby &amp;amp;nbsp&amp;amp;nbsp&amp;amp;nbspFacebook 
+            com --&amp;amp;nbspDelegated from Verisign&amp;amp;nbsp--&amp;gt; facebook(facebook.com)
+            facebook --&amp;gt; fwww(www.facebook.com)
+            facebook --&amp;gt; f...(...)
+        end 
+    end
+
+    classDef domainClass font-weight:900;
+    class .comDomain domainClass;
+&lt;/div&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;dns-nameservers-and-resource-records-zone-files&quot;&gt;DNS Nameservers and Resource Records (Zone Files)&lt;/h3&gt;
+&lt;p&gt;Information about zones are stored in &lt;strong&gt;Nameservers&lt;/strong&gt;. Nameservers are servers
+that are responsible for holding &lt;strong&gt;Resource Records&lt;/strong&gt; (&lt;strong&gt;RRs&lt;/strong&gt;) aka &lt;strong&gt;Zone 
+Files&lt;/strong&gt; for a particular zone. RRs are divided up into classes, the only of 
+which that holds much relevance today is the &lt;strong&gt;Internet&lt;/strong&gt; class. For the 
+internet class you have several types of RRs, each type of record holds 
+different information about the zone. &lt;em&gt;Some&lt;/em&gt; of the most common records are:&lt;/p&gt;
+&lt;div class=&quot;mermaid&quot;&gt;
+flowchart TB
+    subgraph &amp;amp;nbsp&amp;amp;nbspCNAME Record&amp;amp;nbsp&amp;amp;nbsp
+        CNAME(CNAME)
+    end
+    subgraph &amp;amp;nbsp&amp;amp;nbspMX Record&amp;amp;nbsp&amp;amp;nbsp
+        MX(MX)
+    end
+    subgraph &amp;amp;nbsp&amp;amp;nbspAAAA Record&amp;amp;nbsp&amp;amp;nbsp
+        AAAA(AAAA)
+    end
+    subgraph &amp;amp;nbsp&amp;amp;nbspA Record&amp;amp;nbsp&amp;amp;nbsp
+        A(A)
+    end
+&lt;/div&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;u&gt;A Record&lt;/u&gt;&lt;/strong&gt;: Converts a domain name to an IPv4 address.&lt;br /&gt;
+&lt;br /&gt; 
+&lt;strong&gt;&lt;u&gt;AAAA Record&lt;/u&gt;&lt;/strong&gt;: Converts a domain name to an IPv6 address.&lt;br /&gt;
+&lt;br /&gt; 
+&lt;strong&gt;&lt;u&gt;MX Record&lt;/u&gt;&lt;/strong&gt;: Identifies the mail server for a email recipient.  &lt;br /&gt;
+&lt;br /&gt; 
+&lt;strong&gt;&lt;u&gt;CNAME Record&lt;/u&gt;&lt;/strong&gt;: &lt;strong&gt;CNAME&lt;/strong&gt; aka &lt;strong&gt;Canonical Name&lt;/strong&gt; converts a domain name 
+to another domain name. This is sometimes required because domain names can be
+setup to act like an alias. This can repeat multiple times until you eventually
+reach a domain name that resolves to an IP address for example:  &lt;br /&gt;
+&lt;br /&gt;&lt;/p&gt;
+
+&lt;div class=&quot;mermaid&quot;&gt;
+flowchart LR
+    fb(www.facebook.com) -- &amp;amp;nbsp&amp;amp;nbspCNAME Record&amp;amp;nbsp&amp;amp;nbsp --&amp;gt; star(star-mini.c10r.facebook.com)  
+    star -- &amp;amp;nbsp&amp;amp;nbspA Record&amp;amp;nbsp&amp;amp;nbsp --&amp;gt; ip(157.240.19.35)
+&lt;/div&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;authoritative-nameservers&quot;&gt;Authoritative Nameservers&lt;/h3&gt;
+&lt;p&gt;Authoritative nameservers are nameservers that have all the resource records for 
+a zone. A zone can have multiple nameservers, some of which may only contain 
+some of the total resource records for a zone, these are just called 
+nameservers. Authoritative nameservers are what are queried for resource records 
+in the domain name resolution process. &lt;br /&gt;
+&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;Leaf domains (domains at the bottom of a branch in the DNS namespace) often have 
+a mapping to a IP address of a computer on the internet. Whereas domains in the 
+middle of the DNS namespace can either be a host as well or they could just 
+manage the information about their own domain through the use of nameservers. &lt;br /&gt;
+&lt;br /&gt;&lt;/p&gt;</content><author><name></name></author><category term="DNS" /><summary type="html">Domain Name System (DNS) is the system computers use to convert Domain Names e.g. www.example.com into IP addresses. DNS gets used throughout many common computer activities, however, you are likely to invoke it the most by browsing the web. More often than not you browse to a website not using its IP address but instead a readable domain name. It is not clear to a computer where on the internet to look for that domain name, so it must first be converted to an IP address using DNS.</summary></entry></feed>
